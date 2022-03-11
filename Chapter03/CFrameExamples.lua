@@ -3,7 +3,7 @@ local myCFrame = CFrame.new(0,0,0)
 
 local Part1 = workspace.Part1
 local Part2 = workspace.Part2
-Part1.CFrame = CFrame.new(Part1.Position, Part2.Position)
+Part1.CFrame = CFrame.lookAt(Part1.Position, Part2.Position)
 
 
 myCFrame *= CFrame.new(0,0,-1)
