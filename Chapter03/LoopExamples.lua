@@ -28,7 +28,7 @@ end
 local values = {37, 60, 59, 20, 4, 10, 100, 75, 83}
 
 for index, value in pairs(values) do
-	local value %= 2
+	value %= 2
 	if value == 1 then --Odd number
 		values[index] *= 2
 	end
