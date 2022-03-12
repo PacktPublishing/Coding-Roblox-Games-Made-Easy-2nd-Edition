@@ -53,11 +53,11 @@ local num = sum(7, 9, 12, 3, 2, 6, 13)
 print(num)
 
 
-local elapsedTime = 0
+local timeElapsed = 0
 task.defer(function()
 	while task.wait(1) do
-		elapsedTime += 1
-		print(elapsedTime)
+		timeElapsed += 1
+		print(timeElapsed)
 	end
 end)
 
