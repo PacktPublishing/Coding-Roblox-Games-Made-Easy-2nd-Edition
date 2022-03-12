@@ -52,12 +52,12 @@ end
 print(num) 
 
 
-local elapsedTime = 0
+local timeElapsed = 0
 
 while true do
 	task.wait(1)
-	elapsedTime += 1
-	print(elapsedTime)
+	timeElapsed += 1
+	print(timeElapsed)
 end
 
 
