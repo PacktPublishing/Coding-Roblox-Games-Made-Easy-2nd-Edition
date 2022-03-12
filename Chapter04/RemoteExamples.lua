@@ -11,7 +11,7 @@ RemoteEvent:FireAllClients() --Sends signal to all clients
 
 
 --server
-wait(5)
+task.wait(5)
 RemoteEvent:FireAllClients("Game over!", "Blue team has won!")
 
 --client
