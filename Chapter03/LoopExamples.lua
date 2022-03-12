@@ -55,7 +55,7 @@ print(num)
 local elapsedTime = 0
 
 while true do
-	wait(1)
+	task.wait(1)
 	elapsedTime += 1
 	print(elapsedTime)
 end
