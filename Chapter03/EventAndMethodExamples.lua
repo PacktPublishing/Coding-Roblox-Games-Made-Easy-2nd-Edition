@@ -1,22 +1,26 @@
-local part = workspace.FloatingPart
-local mass = part:GetMass()
+local part = workspace.FloatingPart 
+local mass = part:GetMass() 
 
-local bodyForce = Instance.new("BodyForce")
-bodyForce.Force = Vector3.new(0,mass * workspace.Gravity,0)
-bodyForce.Parent = part
+local attachment = Instance.new("Attachment") 
+attachment.Parent = part 
+
+local vectorForce = Instance.new("VectorForce") 
+vectorForce.Force = Vector3.new(0,mass * workspace.Gravity,0) 
+vectorForce.Attachment0 = attachment 
+vectorForce.Parent = part 
 
 
-local Part = workspace.TouchPart
+local part = workspace.TouchPart
 
-Part.Touched:Connect(function(hit)
+part.Touched:Connect(function(hit)
 	print(hit)
 end)
 
 
-local Part = workspace.TouchPart
+local part = workspace.TouchPart
 
 local function printHitName(hit)
 	print(hit)
 end
 
-Part.Touched:Connect(printHitName)
+part.Touched:Connect(printHitName)
