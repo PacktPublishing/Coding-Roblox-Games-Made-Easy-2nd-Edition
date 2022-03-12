@@ -55,7 +55,7 @@ print(num)
 
 local elapsedTime = 0
 task.defer(function()
-	while wait(1) do
+	while task.wait(1) do
 		elapsedTime += 1
 		print(elapsedTime)
 	end
