@@ -54,7 +54,7 @@ print(num)
 
 
 local elapsedTime = 0
-spawn(function()
+task.defer(function()
 	while wait(1) do
 		elapsedTime += 1
 		print(elapsedTime)
