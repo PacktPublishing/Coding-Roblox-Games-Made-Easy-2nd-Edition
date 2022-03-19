@@ -62,8 +62,8 @@ local function sum(...)
 	return sum
 end
 
-Function.OnInvoke = sum
+BindableFunction.OnInvoke = sum
 
 --script 2
-local sum = Function:Invoke(2, 4, 11)
+local sum = BindableFunction:Invoke(2, 4, 11)
 print(sum)
