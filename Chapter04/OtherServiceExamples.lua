@@ -21,7 +21,9 @@ end)
 local UIS = game:GetService("UserInputService")
 
 UIS.InputBegan:Connect(function(input, typing)
-	if typing then return end
+	if typing then
+		return
+	end
 
 	if input.KeyCode == Enum.KeyCode.E then
 		print("Client pressed E!")
