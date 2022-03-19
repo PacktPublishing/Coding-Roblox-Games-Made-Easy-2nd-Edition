@@ -21,7 +21,7 @@ mouse.Button1Down:Connect(function()
 		clicked = true
 		char.Humanoid.JumpHeight = JUMP_HEIGHT
 		
-		delay(30, function()
+		task.delay(30, function()
 			char.Humanoid.JumpHeight = 7.2
 			tool:Destroy()
 		end)
