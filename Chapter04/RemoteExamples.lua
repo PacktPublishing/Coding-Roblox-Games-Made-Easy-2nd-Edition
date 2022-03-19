@@ -1,10 +1,13 @@
 RemoteEvent:FireServer()
 
 
-RemoteEvent.OnServerEvent:Connect(function(player)
-	--Statements
-end)
+--client
+RemoteEvent:FireServer("Hello world!");
 
+--server
+RemoteEvent.OnServerEvent:Connect(function(player, message)
+	print(message)
+end)
 
 RemoteEvent:FireClient(player) --Sends signal to single client
 RemoteEvent:FireAllClients() --Sends signal to all clients
