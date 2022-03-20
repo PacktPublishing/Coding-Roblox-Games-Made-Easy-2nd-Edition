@@ -27,17 +27,17 @@ local function castRay()
 	local direction = (mouse.Hit.p - firePoint.Position).Unit
 	direction *= gunSettings.range
   
-  local raycastParams = RaycastParams.new()
-  raycastParams.FilterDescendantsInstances = ignoreList
+  	local raycastParams = RaycastParams.new()
+  	raycastParams.FilterDescendantsInstances = ignoreList
 	raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
   
-  local raycastResult = workspace:Raycast(origin, direction, raycastParams)
-  local hit, pos
+  	local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+  	local hit, pos
 
-  if raycastResult then
-    hit = raycastResult.Instance
-    pos = raycastResult.Position
-  end
+  	if raycastResult then
+    		hit = raycastResult.Instance
+   		pos = raycastResult.Position
+  	end
   
 	replicatedStorage.Replicate:FireServer(tool, origin, pos)
 	local visual = Instance.new("Part")
