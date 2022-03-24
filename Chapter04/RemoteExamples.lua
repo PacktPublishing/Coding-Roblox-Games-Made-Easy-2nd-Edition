@@ -2,11 +2,12 @@ RemoteEvent:FireServer()
 
 
 --client
-RemoteEvent:FireServer("Hello world!");
+RemoteEvent:FireServer("Hello world!", 3);
 
 --server
-RemoteEvent.OnServerEvent:Connect(function(player, message)
+RemoteEvent.OnServerEvent:Connect(function(player, message, num)
 	print(message)
+	print(num)
 end)
 
 RemoteEvent:FireClient(player) --Sends signal to single client
