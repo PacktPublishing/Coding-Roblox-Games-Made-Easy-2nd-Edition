@@ -27,13 +27,13 @@ local monetization = require(script.Parent.Monetization)
 local toolPasses = {000000}
 
 initializeMod.givePremiumTools = function(player)
-	for _, ID in pairs(toolPasses) do
+	for _, passId in pairs(toolPasses) do
 		local key = player.UserId
-		local ownsPass = marketService:UserOwnsGamePassAsync(key, ID)
-		local hasTag = collectionService:HasTag(player, ID)
+		local ownsPass = monetization.ownsPass(key, passId)
+		local hasTag = collectionService:HasTag(player, passId)
 		
 		if hasTag or ownsPass then
-			monetization[ID](player)
+			monetization[passId](player)
 		end
 	end
 end
