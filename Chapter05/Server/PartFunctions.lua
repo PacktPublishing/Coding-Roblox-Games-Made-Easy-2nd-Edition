@@ -2,6 +2,15 @@ local playerService = game:GetService("Players")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local dataMod = require(script.Parent.Data)
 local partFunctionsMod = {}
+local coinCodes = {}
+
+playerService.PlayerAdded:Connect(function(player)
+	coinCodes[player.UserId] = {}	
+end)
+
+playerService.PlayerRemoving:Connect(function(player)
+	coinCodes[player.UserId] = nil	
+end)
 
 partFunctionsMod.playerFromHit = function(hit)
 	local char = hit:FindFirstAncestorOfClass("Model")
@@ -61,20 +70,11 @@ partFunctionsMod.RewardParts = function(part)
 		local player = partFunctionsMod.playerFromHit(hit)
 		
 		if player then
-			local tagFolder = player:FindFirstChild("CoinTags")
-			if not tagFolder then
-				tagFolder = Instance.new("Folder")
-				tagFolder.Name = "CoinTags"
-				tagFolder.Parent = player
-			end
+			local playerCoinCodes = coinCodes[player.UserId]
 			
-			if not tagFolder:FindFirstChild(code) then
+			if not table.find(playerCoinCodes, code) then
 				dataMod.increment(player, "Coins", reward)
-				
-				local codeTag = Instance.new("BoolValue")
-				codeTag.Name = code
-				codeTag.Parent = tagFolder
-				
+				table.insert(playerCoinCodes, code)
 				replicatedStorage.Effect:FireClient(player, part)
 			end
 		end
