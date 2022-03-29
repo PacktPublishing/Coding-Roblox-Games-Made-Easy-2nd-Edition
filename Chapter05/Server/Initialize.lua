@@ -13,7 +13,7 @@ end
 
 playerService.PlayerAdded:Connect(function(player)
 	player.CharacterAdded:Connect(function(char)
-		char:WaitForChild("Humanoid")
+		char:WaitForChild("HumanoidRootPart")
 		initializeMod.givePremiumTools(player)
 		local stageNum = dataMod.get(player, "Stage")
 		local spawnPoint = getStage(stageNum)
