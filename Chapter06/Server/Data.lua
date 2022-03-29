@@ -6,16 +6,6 @@ local sessionData = {}
 local dataMod = {}
 local AUTOSAVE_INTERVAL = 120
 
-local returnModFunc = script.Parent.ReturnMod
-local modules = {}
-local function mod(name)
-	if not modules[name] then
-		modules[name] = returnModFunc:Invoke(name)
-	end
-
-	return modules[name]
-end
-
 dataMod.recursiveCopy = function(dataTable)
 	local tableCopy = {}
 	
