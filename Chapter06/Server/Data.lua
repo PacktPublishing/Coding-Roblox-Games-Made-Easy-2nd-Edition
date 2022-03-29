@@ -93,12 +93,12 @@ end
 
 dataMod.increment = function(player, stat, value)
 	local key = player.UserId
-	sessionData[key][stat] = dataMod.get(player, stat) + value
+	sessionData[key][stat] += value
 	
   local statVal = player.leaderstats:FindFirstChild(stat)
   
   if statVal then
-     statVal.Value = dataMod.get(player, stat) + value
+     statVal.Value = dataMod.get(player, stat)
   end
 end
 
