@@ -55,7 +55,7 @@ local partGroups = {
 for _, group in pairs(partGroups) do
 	for _, part in pairs(group:GetChildren()) do
 		if part:IsA("BasePart") then
-			if part:FindFirstChild("Rotate") then
+			if part:GetAttribute("Rotate") then
 				table.insert(rotParts, part)
 			end
 		end
