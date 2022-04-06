@@ -62,7 +62,7 @@ for _, group in pairs(partGroups) do
 	end
 end
 
-runService.RenderStepped:Connect(function(dt)
+runService.Heartbeat:Connect(function(dt)
 	for _, part in pairs(rotParts) do
 		local rot = part:GetAttribute("Rotate")
 		rot *= dt
