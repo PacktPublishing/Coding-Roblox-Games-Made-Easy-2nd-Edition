@@ -39,10 +39,11 @@ local function verifyHit(hit, direction, origin, relCFrame, gunSettings)
 	end
 end
 
-hitRemote.OnServerEvent:Connect(function(player, weapon, hit, direction, origin, relCFrame)	
+hitRemote.OnServerEvent:Connect(function(player, weaponName, hit, direction, origin, relCFrame)	
 	local otherPlayer, char = weapons.playerFromHit(hit)
 	
 	if char and char:FindFirstChildOfClass("Humanoid") and not weapon.Debounce.Value then
+		local weapon = replicatedStorage.Weapons:FindFirstChild(weaponName)
 		local gunSettings = require(weapon.Settings)
 		
 		if verifyHit(hit, direction, origin, relCFrame, gunSettings) then
