@@ -22,15 +22,15 @@ end)
 local ignoreList = {char, workspace.Effects}
 local debris = game:GetService("Debris")
 
+local raycastParams = RaycastParams.new()
+raycastParams.FilterDescendantsInstances = ignoreList
+raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
 local function castRay()
 	local origin = firePoint.Position
 	local direction = (mouse.Hit.p - firePoint.Position).Unit
 	direction *= gunSettings.range
-  
-  	local raycastParams = RaycastParams.new()
-  	raycastParams.FilterDescendantsInstances = ignoreList
-	raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
-  
+	
   	local raycastResult = workspace:Raycast(origin, direction, raycastParams)
   	local hit, pos
 
