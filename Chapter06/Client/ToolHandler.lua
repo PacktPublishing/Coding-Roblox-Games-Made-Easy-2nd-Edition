@@ -85,7 +85,7 @@ local function fire()
 
 			if hit then
 				local relCFrame = hit.CFrame:Inverse() * CFrame.new(pos)
-				hitRemote:FireServer(tool, hit, direction, origin, relCFrame)
+				hitRemote:FireServer(tool.Name, hit, direction, origin, relCFrame)
 			end			
 		end
 		task.wait(waitTime)
