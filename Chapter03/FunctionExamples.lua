@@ -83,7 +83,7 @@ local function checkEquality(table1, table2)
 	print("First and second variable same table = ".. tostring(table1 == table2))
 end
 
-local group = {"Ashitosh", "Hayden", "Sofi"}
+local group = {"Ashitosh", "Grey", "Manish", "Meenakshi"}
 local groupClone = group
 checkEquality(group, groupClone)
 
