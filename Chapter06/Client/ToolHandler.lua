@@ -30,15 +30,18 @@ local function castRay()
 	local origin = firePoint.Position
 	local direction = (mouse.Hit.p - firePoint.Position).Unit
 	direction *= gunSettings.range
-	
-  	local raycastResult = workspace:Raycast(origin, direction, raycastParams)
-  	local hit, pos
 
-  	if raycastResult then
-    		hit = raycastResult.Instance
-   		pos = raycastResult.Position
-  	end
-  
+	local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+	local hit, pos
+
+	if raycastResult then
+		hit = raycastResult.Instance
+		pos = raycastResult.Position
+	else
+		local endpoint = origin + direction
+		pos = endpoint
+	end
+
 	replicatedStorage.Replicate:FireServer(tool, origin, pos)
 	local visual = Instance.new("Part")
 	local length = (pos - origin).Magnitude
@@ -59,7 +62,7 @@ local function gunEffects()
 		if effect:IsA("ParticleEmitter") then
 			effect:Emit(50)
 		end
-		
+
 		if effect:IsA("Sound") then
 			effect:Play()
 		end
