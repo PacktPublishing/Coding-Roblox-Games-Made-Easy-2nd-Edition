@@ -78,11 +78,11 @@ dataMod.set = function(player, stat, value)
 	local key = player.UserId
 	sessionData[key][stat] = value
   
-  local statVal = player.leaderstats:FindFirstChild(stat)
+	local statVal = player.leaderstats:FindFirstChild(stat)
   
-  if statVal then
-     statVal.Value = value
-  end
+	if statVal then
+		statVal.Value = value
+	end
 end
 
 dataMod.increment = function(player, stat, value)
