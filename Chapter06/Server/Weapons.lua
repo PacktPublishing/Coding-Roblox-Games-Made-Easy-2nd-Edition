@@ -42,15 +42,15 @@ end
 hitRemote.OnServerEvent:Connect(function(player, weaponName, hit, direction, origin, relCFrame)	
 	local otherPlayer, char = weapons.playerFromHit(hit)
 	
-	if char and char:FindFirstChildOfClass("Humanoid") and not weapon.Debounce.Value then
+	if char and char:FindFirstChildOfClass("Humanoid") and not player:GetAttribute(weaponName.. "Debounce") then
 		local weapon = replicatedStorage.Weapons:FindFirstChild(weaponName)
 		local gunSettings = require(weapon.Settings)
 		
 		if verifyHit(hit, direction, origin, relCFrame, gunSettings) then
-			weapon.Debounce.Value = true
+			player:SetAttribute(weaponName.. "Debounce", true)
 			local waitTime = 60/gunSettings.rateOfFire
 			task.delay(waitTime, function()
-				weapon.Debounce.Value = false
+				player:SetAttribute(weaponName.. "Debounce", nil)
 			end)
 			
 			local hum = char:FindFirstChildOfClass("Humanoid")
