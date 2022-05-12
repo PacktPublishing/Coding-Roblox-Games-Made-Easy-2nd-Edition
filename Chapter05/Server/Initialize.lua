@@ -17,6 +17,8 @@ playerService.PlayerAdded:Connect(function(player)
 		initializeMod.givePremiumTools(player)
 		local stageNum = dataMod.get(player, "Stage")
 		local spawnPoint = getStage(stageNum)
+				
+		task.wait()
 		char:SetPrimaryPartCFrame(spawnPoint.CFrame * CFrame.new(0,3,0))
 	end)
 end)
@@ -24,7 +26,7 @@ end)
 local collectionService = game:GetService("CollectionService")
 local marketService = game:GetService("MarketplaceService")
 local monetization = require(script.Parent.Monetization)
-local toolPasses = {000000}
+local toolPasses = {}
 
 initializeMod.givePremiumTools = function(player)
 	for _, passId in pairs(toolPasses) do
