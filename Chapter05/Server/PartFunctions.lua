@@ -121,7 +121,7 @@ end
 
 local items = {
 	["Spring Potion"] = {
-		Price = 5;	
+		price = 5;	
 	} ;
 }
 
@@ -134,8 +134,8 @@ partFunctionsMod.ShopParts = function(part)
 	part.Touched:Connect(function(hit)
 		local player = partFunctionsMod.playerFromHit(hit)
 		
-		if player and dataMod.get(player, "Coins") >= item.Price then
-			dataMod.increment(player, "Coins", -item.Price)
+		if player and dataMod.get(player, "Coins") >= item.price then
+			dataMod.increment(player, "Coins", -item.price)
 			local shopFolder = replicatedStorage.ShopItems
 			local tool = shopFolder:FindFirstChild(itemName):Clone()
 			
