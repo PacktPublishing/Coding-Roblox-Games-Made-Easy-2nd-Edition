@@ -32,6 +32,19 @@ monetizationMod[000000] = function(player)
 	dataMod.increment(player, "Coins", 100)
 end
 
+monetizationMod.ownsPass = function(userId, passId)
+	local doesOwnPass = false
+	local success, _ = pcall(function()
+		doesOwnPass = marketService:UserOwnsGamePassAsync(userId, passId)
+	end)
+	
+	if not success then
+		return monetizationMod.ownsPass(userId, passId)
+	end
+	
+	return doesOwnPass 
+end 
+
 local collectionService = game:GetService("CollectionService")
 
 marketService.PromptGamePassPurchaseFinished:Connect(function(player, gamePassId, wasPurchased)
