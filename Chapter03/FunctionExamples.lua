@@ -7,16 +7,16 @@ local function fillStoreSupply()
 		local ranVal = random:NextInteger(1,3)
 		local item
     
-    if ranVal == 1 then 
-        item = "Fruit" 
-     elseif ranVal == 2 then 
-        item = "Vegetable" 
-     else 
-        item = "Shoe" 
-     end 
-    
-		table.insert(storeSupply, item)
-	end
+		if ranVal == 1 then 
+			item = "Fruit" 
+		elseif ranVal == 2 then 
+			item = "Vegetable" 
+		else 
+			item = "Shoe" 
+		end 
+
+			table.insert(storeSupply, item)
+		end
 
 	return storeSupply
 end
@@ -42,6 +42,7 @@ print(factorial(12))
 local function sum(...)
 	local args = {...}
 	local sum = 0
+	
 	for _, number in pairs(args) do
 		sum += number
 	end
