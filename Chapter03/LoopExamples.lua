@@ -34,6 +34,8 @@ for index, value in pairs(values) do
 	end
 end
 
+print(values)
+
 
 local items = workspace:GetDescendants()
 
