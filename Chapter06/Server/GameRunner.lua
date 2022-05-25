@@ -128,7 +128,7 @@ gameRunner.gameLoop = function()
 	end
 end
 
-task.defer(gameRunner.gameLoop)
+task.spawn(gameRunner.gameLoop)
 
 
 return gameRunner
