@@ -1,9 +1,9 @@
 # Coding-Roblox-Games-Made-Easy-2nd-Edition
 Coding Roblox Games Made Easy - 2nd Edition, Published by Packt
 
-<a href="https://www.packtpub.com/product/coding-roblox-games-made-easy/9781803234670?_ga=2.168546980.483349446.1656053254-1241411097.1633422973"><img src="cover.png" alt="Book Name" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/coding-roblox-games-made-easy/9781803234670"><img src="cover.png" alt="Book Name" height="256px" align="right"></a>
 
-This is the code repository for [Coding-Roblox-Games-Made-Easy-2nd-Edition](https://www.packtpub.com/product/coding-roblox-games-made-easy/9781803234670?_ga=2.168546980.483349446.1656053254-1241411097.1633422973), published by Packt.
+This is the code repository for [Coding-Roblox-Games-Made-Easy-2nd-Edition](https://www.packtpub.com/product/coding-roblox-games-made-easy/9781803234670), published by Packt.
 
 **The ultimate guide to creating games with Roblox Studio and Luau programming**
 
@@ -27,7 +27,7 @@ This book covers the following exciting features:
 * Master the three Ms: Mechanics, Monetization, Marketing
 * Learn 50 cool things to do on Roblox
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/Coding-Roblox-Games-Made-Easy/dp/1803234679/ref=sr_1_1?keywords=coding+roblox+games+made+easy&qid=1656054894&sprefix=%2Caps%2C314&sr=8-1) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/Coding-Roblox-Games-Made-Easy/dp/1803234679) today!
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
