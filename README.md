@@ -25,11 +25,9 @@ This book covers the following exciting features:
 * Use Roblox programming and rewards to make your first game
 * Move from a lobby to a battleground, build avatars and create weapons with which to fight
 * Master the three Ms: Mechanics, Monetization, Marketing
-*Learn 50 cool things to do on Roblox
+* Learn 50 cool things to do on Roblox
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/Coding-Roblox-Games-Made-Easy/dp/1803234679/ref=sr_1_1?crid=2U89K3EQWWTHA&keywords=coding+roblox+games+made+easy&qid=1656053808&sprefix=coding+roblox%2Caps%2C458&sr=8-1) today!
-
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
+If you feel this book is for you, get your [copy](https://www.amazon.com/Coding-Roblox-Games-Made-Easy/dp/1803234679/ref=sr_1_1?keywords=coding+roblox+games+made+easy&qid=1656054894&sprefix=%2Caps%2C314&sr=8-1) today!
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
