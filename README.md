@@ -5,7 +5,7 @@ Coding Roblox Games Made Easy - 2nd Edition, Published by Packt
 
 This is the code repository for [Coding-Roblox-Games-Made-Easy-2nd-Edition](https://www.packtpub.com/product/coding-roblox-games-made-easy/9781803234670?_ga=2.168546980.483349446.1656053254-1241411097.1633422973), published by Packt.
 
-**The Ultimate Guide to Creating Games with Roblox Studio and Lua Programming**
+**The ultimate guide to creating games with Roblox Studio and Luau programming**
 
 ## What is this book about?
 Roblox is a huge entertainment platform like no other for both playing and creating games. With over 200 million monthly active users, Roblox has enabled new and experienced developers to create successful games, often called experiences, that can be played globally at no cost.
