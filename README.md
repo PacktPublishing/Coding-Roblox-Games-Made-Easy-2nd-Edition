@@ -30,7 +30,7 @@ This book covers the following exciting features:
 If you feel this book is for you, get your [copy](https://www.amazon.com/Coding-Roblox-Games-Made-Easy/dp/1803234679) today!
 
 ## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
+All of the code is organized into folders. For example, Chapter03.
 
 The code will look like the following:
 ```
