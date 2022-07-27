@@ -55,3 +55,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Zander Brumbaugh**
 is an independent programmer, project manager, and game designer. The games he has made or contributed to have been played more than 300 million times. He has created popular games including Anime Lifting Simulator, My Salon, Munching Masters, Power Simulator amongst others. Zander currently attends the University of Washington and is part of the Paul G. Allen School of Computer Science and Engineering. At the time of writing, Zander is 19 years old.
+
+
+## Community & Support
+Join the book [Discord Server](https://discord.gg/JEv2mqygZB) to participate in the ongoing discussions or/and initiate a new one. You will find other developers reading the book alongside and helping each other with questions.
