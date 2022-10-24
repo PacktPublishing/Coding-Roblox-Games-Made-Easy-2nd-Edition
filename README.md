@@ -59,3 +59,7 @@ is an independent programmer, project manager, and game designer. The games he h
 
 ## Community & Support
 Join the book [Discord Server](https://discord.gg/JEv2mqygZB) to participate in the ongoing discussions or/and initiate a new one. You will find other developers reading the book alongside and helping each other with questions.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803234670">https://packt.link/free-ebook/9781803234670 </a> </p>
