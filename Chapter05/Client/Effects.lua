@@ -25,6 +25,7 @@ replicatedStorage.Effect.OnClientEvent:Connect(function(part)
 end)
 
 effectsMod.RewardParts = function(part)
+	part.CanCollide = false
 	part.Transparency = 1
 	playSound(part)
 end
