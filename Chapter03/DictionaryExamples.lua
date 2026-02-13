@@ -32,3 +32,4 @@ local units = {
 		WalkSpeed = 25;
 		Damage = 15;
 	};
+}

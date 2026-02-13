@@ -55,12 +55,12 @@ local notProduce = 0
 local item = "Fruit" 
 
 if item == "Fruit" then 
-    numFruits += 1 
+	numFruits += 1 
 elseif item == "Vegetable" then 
-    numVeggies += 1 
+	numVeggies += 1 
 else 
-    notProduce += 1 
+	notProduce += 1 
 end 
 
 
-local isAnchored = Part.Anchored and "Anchored" or "Unanchored"
+local isAnchored = if Part.Anchored then "Anchored" else "Unanchored"
