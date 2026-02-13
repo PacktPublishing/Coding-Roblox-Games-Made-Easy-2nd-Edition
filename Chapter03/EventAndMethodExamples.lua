@@ -5,7 +5,7 @@ local attachment = Instance.new("Attachment")
 attachment.Parent = part 
 
 local vectorForce = Instance.new("VectorForce") 
-vectorForce.Force = Vector3.new(0,mass * workspace.Gravity,0) 
+vectorForce.Force = Vector3.new(0, mass * workspace.Gravity, 0) 
 vectorForce.Attachment0 = attachment 
 vectorForce.Parent = part 
 
